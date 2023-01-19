@@ -1,0 +1,13 @@
+.navbar-brand {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.container-fluid {
+    background-color: darkseagreen;
+}
+
+.collapse navbar-collapse {
+    border: 1px solid black;
+}
