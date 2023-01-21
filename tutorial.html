@@ -25,9 +25,12 @@
 
     <!-- Navigation -->
     <!-- navbar-dark und bg-dark bearbeitet die Farbe -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- pt-lg-3 = Abstand von oben -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-lg-3">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <!-- fs-2 = Schriftgröße -->
+          <a class="navbar-brand fs-2 fw-bold" href="#">
+            <!-- ein Eis Icon -->
             <i class="fas fa-ice-cream"></i>
             <!-- die Farbe zu der CSS-Datei bearbeitet(class="limegreen")-->
             Eis<span class="limegreen">Diner</span></a>
@@ -37,14 +40,28 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- ms-auto = Abstand zum ende-->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="#start">Start</a>
+              <!-- text-white = Textfarbe -->
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link text-white active" href="#start">Start</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#products">Produkte</a>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link text-white" href="#products">Produkte</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Über uns</a>
+              <li class="nav-item mx-lg-2">
+                <a class="nav-link text-white" href="#about">Über uns</a>
+              </li>
+              <!-- d-flex = nebeneinander anzeigen -->
+              <!-- align-items-center = zentrieren -->
+              <li class="d-flex align-items-center mt-2 mt-lg-0 mx-lg-2">
+                <a href="#" class="icon-link">
+                  <i class="fab fa-facebook fa-lg me-2"></i>
+                </a>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-twitter fa-lg mx-2"></i>
+                </a>
+                <a href="#" class="icon-link">
+                  <i class="fab fa-instagram fa-lg mx-2"></i>
+                </a>
               </li>
             </ul>
           </div>
