@@ -8,6 +8,11 @@ body {
     color: limegreen;
 }
 
+.navbar,
+.carousel {
+    border-bottom: 1px solid #888;
+}
+
 
 /* Navigation */
 
@@ -30,4 +35,13 @@ body {
 .icon-link:active svg,
 .icon-link:hover svg {
     color: limegreen;
+}
+
+
+/* Slider */
+.image-slider {
+    width: 100vw;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
 }

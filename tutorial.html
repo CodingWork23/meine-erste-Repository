@@ -21,7 +21,8 @@
 
     <title>Document</title>
 </head>
-<body>
+<!-- bg-'farbe'  heißt Hintergrund -->
+<body class="bg-dark text-white">
 
     <!-- Navigation -->
     <!-- navbar-dark und bg-dark bearbeitet die Farbe -->
@@ -70,6 +71,33 @@
 
 
     <!-- Image Slider-->
+    <!--  wie man richtig Bilder setzt mit unterschiedliche Größen:
+
+      <div style="background-image: url('Bild');" class="Klasse"></div> 
+
+      in der Klasse (class) kann man die Größen einstellen mit CSS -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">              
+        <!-- data-bs-interval="" heißt automatisches Wechseln des Sliders --> 
+        <div class="carousel-item active" data-bs-interval="8000">
+          <div style="background-image: url('pictures/dovile-ramoskaite-iT4qcNMhYTQ-unsplash.jpg');" class="image-slider"></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <div style="background-image: url('pictures/elza-kurbanova-NEab1U1FfKM-unsplash.jpg');" class="image-slider"></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="8000">
+          <div style="background-image: url('pictures/lama-roscu-Wpg3Qm0zaGk-unsplash.jpg');" class="image-slider"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
      
     <!-- Webseite Infos -->
 
