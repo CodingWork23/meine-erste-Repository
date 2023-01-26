@@ -8,9 +8,15 @@ body {
     color: limegreen;
 }
 
+
 .navbar,
 .carousel {
     border-bottom: 1px solid #888;
+}
+
+#products,
+#about {
+    padding-top: 100px;     /* Abstand nach oben */
 }
 
 
@@ -42,6 +48,22 @@ body {
 .image-slider {
     width: 100vw;
     height: 85vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Produkte */
+.card-image {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* About me */
+.about-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
     background-position: center;
     background-size: cover;
 }
