@@ -1,0 +1,77 @@
+/* Allgemein */
+body {
+    font-family: "Yanone Kaffeesatz";
+    font-size: 1.6rem;
+}
+
+.limegreen {
+    color: limegreen;
+}
+
+
+.navbar,
+.carousel {
+    border-bottom: 1px solid #888;
+}
+
+#products,
+#about {
+    padding-top: 100px;     /* Abstand nach oben */
+}
+
+
+/* Navigation */
+
+.nav-link {
+    cursor: pointer;
+}
+
+/* wenn curser drauf ist, Farbe grün wechseln */
+.nav-link:active,
+.nav-link:hover {
+    /* !important benutzen, wenn man die Bootstrap Datein überschreibt */
+    color: limegreen !important;
+}
+
+.icon-link {
+    cursor: pointer;
+}
+
+/* svg benutzen, wenn die Ressorcen nicht von Bootstrap sind */
+.icon-link:active svg,
+.icon-link:hover svg {
+    color: limegreen;
+}
+
+
+/* Slider */
+.image-slider {
+    width: 100vw;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Produkte */
+.card-image {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* About me */
+.about-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;     /* rundes Bild */
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer */
+.footer {
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid #888;
+}
