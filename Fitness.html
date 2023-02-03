@@ -28,20 +28,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
               <li class="nav-item">
                 <a class="nav-link" href="#">Start</a>
               </li>
-              <li class="nav-item dropdown ms-lg-3">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Kurse
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              <li class="nav-item ms-lg-3">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapseKurse">Kurse</a>
               </li>
               <li class="nav-item ms-lg-3">
                 <a class="nav-link" href="#">Produkte</a>
@@ -55,6 +47,51 @@
       </nav>
 
     <!-- Mega Menu -->
+    <!-- position-absolute = vermeidet mitrutschen von Inhalte -->
+    <div class="container position-absolute start-0 end-0 d-none d-lg-block">
+      <div class="collapse" id="collapseKurse">
+        <!-- g-0 = kein aufblocken mehr -->
+        <div class="row g-0 p-4 bg-white">  
+          <!-- col-4 = 4/12 der Fläche verwenden-->
+          <div class="col-4">     
+            <img src="fitness image/alexandra-tran-fS3tGOkp0xY-unsplash.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-3 ps-5">
+            <b class="fs-5">Anfänger</b>
+            <ul class="list-group fs-6">
+              <!-- border-0 = Kästchen löschen -->
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">Crossfit</a></li>
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">Tabata</a></li>
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">BodyWeight</a></li>
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">HIIT</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <b class="fs-5">Pro's</b>
+            <ul class="list-group fs-6">
+              <!-- border-0 = Kästchen löschen -->
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">Crossfit Hell</a></li>
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">Tabata Pro</a></li>
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">BodyWeight ++</a></li>
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">HIIIIT</a></li>
+                <li class="list-group-item border-0 px-0 py-1"><a href="#">80er Oldschool</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <!-- d-block = neue Zeile generieren -->
+            <b class="d-block fs-5 pb-2">Meist gesucht</b>
+            <!-- badge = Flächenkästchen -->
+            <span class="badge bg-primary fs-6 p2 mb-2">Bauch</span>
+            <span class="badge bg-primary fs-6 p2 mb-2">Beine</span>
+            <span class="badge bg-primary fs-6 p2 mb-2">Po</span>
+            <span class="badge bg-primary fs-6 p2 mb-2">Biceps</span>
+            <span class="badge bg-primary fs-6 p2 mb-2">Triceps</span>
+            <span class="badge bg-primary fs-6 p2 mb-2">Ausdauer</span>
+            <span class="badge bg-primary fs-6 p2 mb-2">Krafttraining</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Hero Image -->
     <div style="background-image: url('fitness image/anastase-maragos-7kEpUPB8vNk-unsplash.jpg');" class="background"></div>
