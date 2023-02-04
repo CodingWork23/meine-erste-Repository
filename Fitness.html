@@ -32,8 +32,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Start</a>
               </li>
-              <li class="nav-item ms-lg-3">
+              <li class="nav-item ms-lg-3 d-none d-lg-block">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapseKurse">Kurse</a>
+              </li>
+              <li class="nav-item ms-lg-3 d-lg-none">
+                <a class="nav-link" href="#">Kurse</a>
               </li>
               <li class="nav-item ms-lg-3">
                 <a class="nav-link" href="#">Produkte</a>
@@ -48,15 +51,16 @@
 
     <!-- Mega Menu -->
     <!-- position-absolute = vermeidet mitrutschen von Inhalte -->
+    <!-- d-none d-lg-block = bei geringen Auflösung nicht anzeigen -->
     <div class="container position-absolute start-0 end-0 d-none d-lg-block">
       <div class="collapse" id="collapseKurse">
         <!-- g-0 = kein aufblocken mehr -->
         <div class="row g-0 p-4 bg-white">  
           <!-- col-4 = 4/12 der Fläche verwenden-->
-          <div class="col-4">     
+          <div class="col-5 col-xl-4">     
             <img src="fitness image/alexandra-tran-fS3tGOkp0xY-unsplash.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-3 ps-5">
+          <div class="col-4 col-xl-3 ps-5">
             <b class="fs-5">Anfänger</b>
             <ul class="list-group fs-6">
               <!-- border-0 = Kästchen löschen -->
@@ -66,7 +70,7 @@
                 <li class="list-group-item border-0 px-0 py-1"><a href="#">HIIT</a></li>
             </ul>
           </div>
-          <div class="col-2">
+          <div class="col-3 col-xl-2">
             <b class="fs-5">Pro's</b>
             <ul class="list-group fs-6">
               <!-- border-0 = Kästchen löschen -->
@@ -77,7 +81,7 @@
                 <li class="list-group-item border-0 px-0 py-1"><a href="#">80er Oldschool</a></li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-3 d-none d-xl-block">
             <!-- d-block = neue Zeile generieren -->
             <b class="d-block fs-5 pb-2">Meist gesucht</b>
             <!-- badge = Flächenkästchen -->
